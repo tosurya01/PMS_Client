@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ProjectServiceV191ImplService", targetNamespace = "http://service.ws.srv.pms.payment.fs.evry.com/", wsdlLocation = "http://localhost:3456/pms-srv-ws/services/wsservice/projectServiceV191?wsdl")
+@WebServiceClient(name = "ProjectServiceV191ImplService", targetNamespace = "http://service.ws.srv.pms.payment.fs.evry.com/", wsdlLocation = "http://localhost:3456/pms-srv-ws/services/pmsservice/projectServiceV191?wsdl")
 public class ProjectServiceV191ImplService
     extends Service
 {
@@ -30,7 +30,7 @@ public class ProjectServiceV191ImplService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:3456/pms-srv-ws/services/wsservice/projectServiceV191?wsdl");
+            url = new URL("http://localhost:3456/pms-srv-ws/services/pmsservice/projectServiceV191?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

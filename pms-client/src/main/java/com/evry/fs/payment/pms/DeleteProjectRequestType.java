@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="projectId" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="projectId" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,13 +33,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "deleteProjectRequestType")
 public class DeleteProjectRequestType {
 
-    protected int projectId;
+    protected long projectId;
 
     /**
      * Gets the value of the projectId property.
      * 
      */
-    public int getProjectId() {
+    public long getProjectId() {
         return projectId;
     }
 
@@ -47,7 +47,7 @@ public class DeleteProjectRequestType {
      * Sets the value of the projectId property.
      * 
      */
-    public void setProjectId(int value) {
+    public void setProjectId(long value) {
         this.projectId = value;
     }
 

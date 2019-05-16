@@ -30,14 +30,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ProjectDetailsType }
-     * 
-     */
-    public ProjectDetailsType createProjectDetailsType() {
-        return new ProjectDetailsType();
-    }
-
-    /**
      * Create an instance of {@link AddProjectRequestType }
      * 
      */
@@ -67,6 +59,14 @@ public class ObjectFactory {
      */
     public UpdateProjectRequestType createUpdateProjectRequestType() {
         return new UpdateProjectRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ProjectType }
+     * 
+     */
+    public ProjectType createProjectType() {
+        return new ProjectType();
     }
 
     /**

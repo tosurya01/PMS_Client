@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://evry.com/fs/payment/pms}ProjectDetailsType"/>
+ *         &lt;element ref="{http://evry.com/fs/payment/pms}ProjectType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,36 +29,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "projectDetailsType"
+    "projectType"
 })
 @XmlRootElement(name = "getProjectInfoResponseType")
 public class GetProjectInfoResponseType {
 
-    @XmlElement(name = "ProjectDetailsType", required = true)
-    protected ProjectDetailsType projectDetailsType;
+    @XmlElement(name = "ProjectType", required = true)
+    protected ProjectType projectType;
 
     /**
-     * Gets the value of the projectDetailsType property.
+     * Gets the value of the projectType property.
      * 
      * @return
      *     possible object is
-     *     {@link ProjectDetailsType }
+     *     {@link ProjectType }
      *     
      */
-    public ProjectDetailsType getProjectDetailsType() {
-        return projectDetailsType;
+    public ProjectType getProjectType() {
+        return projectType;
     }
 
     /**
-     * Sets the value of the projectDetailsType property.
+     * Sets the value of the projectType property.
      * 
      * @param value
      *     allowed object is
-     *     {@link ProjectDetailsType }
+     *     {@link ProjectType }
      *     
      */
-    public void setProjectDetailsType(ProjectDetailsType value) {
-        this.projectDetailsType = value;
+    public void setProjectType(ProjectType value) {
+        this.projectType = value;
     }
 
 }
